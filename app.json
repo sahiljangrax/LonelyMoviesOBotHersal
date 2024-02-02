@@ -1,6 +1,7 @@
 {
     "name": "TheMovieProviderBot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "stack": "heroku-22",
     "keywords": [
       "telegram",
       "auto-filter",
