@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg')
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'OmegaLinks.in'))
 STREAM_API = (environ.get('STREAM_API', '7570653688b21e9eba68303b57b83e6ae982cc39'))
-STREAMHTO = (environ.get('STREAMHTO', ''))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_LINKS'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6373303244').split()]
@@ -63,9 +63,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', '')
-CHNL_LNK = environ.get('CHNL_LNK', '')
-TUTORIAL = environ.get('TUTORIAL', '')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Master_Supportt')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/LM_Updates')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_LM_LINKS')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʜᴘ')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002119845734'))
