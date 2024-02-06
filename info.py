@@ -103,8 +103,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN, PORT)
+URL = "https://lmsearchbot-d278d41fb0f6.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -113,15 +113,15 @@ name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = str(getenv('lmsearchbot'))
+    APP_NAME = str(getenv('APP_NAME'))
 
 else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN)
+    URL = "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN)
 else:
-    URL = "lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN)
+    URL = "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN)
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002067576779'))
