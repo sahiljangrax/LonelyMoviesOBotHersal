@@ -9,7 +9,7 @@ class script(object):
 
     ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : Sahil\n‣ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/lonelymovies'>Sahil Jangra💖</a>\n‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\n‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n‣ ʜᴏsᴛᴇᴅ ᴏɴ  : ʜᴇʀᴏᴋᴜ\n‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ4.2 [sᴛᴀʙʟᴇ]</b>"""
     
-    CHANNELS = """<b>‣ Check Out : <a href='https://t.me/lm_updates'>Watch fREEE💖</a>
+    CHANNELS = """<b>‣ Check Out : <a href='https://t.me/lm_backup'>Watch Movies And Another Content for FREEE💖</a>
 <b>⚡ ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ ⚡ 
 
 ▫ ᴀʟʟ ɴᴇᴡ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs.
