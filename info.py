@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '28023575'))
 API_HASH = environ.get('API_HASH', 'dedc36b693321633028848ba66aefa58')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6438431962:AAEhhZWLmJq-kjyBgmUVVu-2xcp-m6jkgto")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6703854877:AAGQjVPlx22DCHvUCeTWVzCk8odIl8hQMNs")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -50,7 +50,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sahilysense9:Sahilxbhai@cluster0.z430xdw.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://SahilJangradm:Sahilxbhai@cluster0.dk26as0.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -103,8 +103,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN, PORT)
+URL = "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -119,9 +119,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN)
+    URL = "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://lmsearchbot-d278d41fb0f6.herokuapp.com/".format(FQDN)
+    URL = "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN)
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002067576779'))
