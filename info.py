@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '28023575'))
 API_HASH = environ.get('API_HASH', 'dedc36b693321633028848ba66aefa58')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6901269155:AAH9HqCKhjTs-s_GQ_ZZIT2DB2P5GFCnBaI")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6438431962:AAEhhZWLmJq-kjyBgmUVVu-2xcp-m6jkgto")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -34,11 +34,11 @@ STREAM_API = (environ.get('STREAM_API', '7570653688b21e9eba68303b57b83e6ae982cc3
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_LINKS'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6373303244').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6874474924').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002106518347 -1002095324572 -1002048924021 -1002057382254 -1002003463906 -1002136877392 -1002045848970 -1002025513301 -1002081833340 -1002113327888 -1002015718192 -1002062214002').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6373303244').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6874474924').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -50,7 +50,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://LMSearch_bot:sahil1234@cluster0.7z5ymy9.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sahilysense9:Sahilxbhai@cluster0.z430xdw.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
