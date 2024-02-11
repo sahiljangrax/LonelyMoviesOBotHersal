@@ -1,5 +1,5 @@
 {
-    "name": "TheMovieProviderBot",
+    "name": "LM_BACKUP",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "heroku-22",
     "keywords": [
@@ -15,7 +15,7 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/HarshalPurohitEdits/TheMovieProviderBot",
+    "website": "https://github.com/sahiljangrax/LM_SearchBot",
     "repository": "https://github.com/sahiljangrax/LM_SearchBot",
     "env": {
         "BOT_TOKEN": {
