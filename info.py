@@ -98,13 +98,13 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('lmsearchbot')
+    APP_NAME = environ.get('premiumautofilterbot')
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN, PORT)
+URL = "https://premiumautofilterbot-fa85393eab88.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://premiumautofilterbot-fa85393eab88.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -113,15 +113,15 @@ name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = str(getenv('APP_NAME'))
+    APP_NAME = str(getenv('premiumautofilterbot'))
 
 else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN)
+    URL = "https://premiumautofilterbot-fa85393eab88.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://premium-autofilterbot-2f3bee127f9b.herokuapp.com/".format(FQDN)
+    URL = "https://premiumautofilterbot-fa85393eab88.herokuapp.com/".format(FQDN)
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002067576779'))
