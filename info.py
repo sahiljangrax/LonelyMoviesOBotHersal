@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '28023575'))
 API_HASH = environ.get('API_HASH', 'dedc36b693321633028848ba66aefa58')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6703854877:AAGQjVPlx22DCHvUCeTWVzCk8odIl8hQMNs")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6711647754:AAEX-aKD8EJujiWixgZbeXAJdchDhMYMqLg")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/c4bbdce01214
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'OmegaLinks.in'))
-STREAM_API = (environ.get('STREAM_API', '7570653688b21e9eba68303b57b83e6ae982cc39'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'shareus.io'))
+STREAM_API = (environ.get('STREAM_API', 'q7h9xlP6LnfXvrb9STbFV679yki1'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_LINKS'))
 
 # Admins, Channels & Users
@@ -56,8 +56,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'OmegaLinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '7570653688b21e9eba68303b57b83e6ae982cc39')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shareus.io')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'inuvmhaSW6PtKl9EW23ibIkuppP2')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
