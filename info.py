@@ -29,9 +29,9 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/c4bbdce01214
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'shareus.io'))
-STREAM_API = (environ.get('STREAM_API', 'q7h9xlP6LnfXvrb9STbFV679yki1'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_LINKS'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.in'))
+STREAM_API = (environ.get('STREAM_API', '7e03fb12f3c91807ea9587376eebc416b2fd7f92'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_instantlinks'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6874474924').split()]
