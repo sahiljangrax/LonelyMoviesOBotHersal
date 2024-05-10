@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/c4bbdce01214
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.in'))
-STREAM_API = (environ.get('STREAM_API', '7e03fb12f3c91807ea9587376eebc416b2fd7f92'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.co'))
+STREAM_API = (environ.get('STREAM_API', '81bb9606c24d8814c7b9ef0fd7875819f9fa319c'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_instantlinks'))
 
 # Admins, Channels & Users
