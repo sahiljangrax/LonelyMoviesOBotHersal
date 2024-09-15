@@ -1,4 +1,4 @@
-import re
+ import re
 from os import environ,getenv
 from Script import script 
 
@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/c4bbdce01214
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', ''))
-STREAM_API = (environ.get('STREAM_API', ''))
+STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.co'))
+STREAM_API = (environ.get('STREAM_API', '8e9ec9cb956ef570d7e54b6075f89922612a30b1'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_instantlinks'))
 
 # Admins, Channels & Users
@@ -55,7 +55,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster1")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantlinks.co')
 SHORTLINK_API = environ.get('SHORTLINK_API', '8e9ec9cb956ef570d7e54b6075f89922612a30b1')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
@@ -89,7 +89,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
 
-SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
+SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10", "S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10"]
 
 QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160P", ""]
 
@@ -103,8 +103,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://sahiljangra-5730dbcd11a8.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://sahiljangra-5730dbcd11a8.herokuapp.com/".format(FQDN, PORT)
+URL = "https://shared-garland-sahiljangrabot-7d7ab1e4.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://shared-garland-sahiljangrabot-7d7ab1e4.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -119,9 +119,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "https://sahiljangra-5730dbcd11a8.herokuapp.com/".format(FQDN)
+    URL = "https://shared-garland-sahiljangrabot-7d7ab1e4.koyeb.app/".format(FQDN)
 else:
-    URL = "https://sahiljangra-5730dbcd11a8.herokuapp.com/".format(FQDN)
+    URL = "https://shared-garland-sahiljangrabot-7d7ab1e4.koyeb.app/".format(FQDN)
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002067576779'))
