@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg')
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', ''))
 STREAM_API = (environ.get('STREAM_API', ''))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/How_To_Open_LM_instantlinks'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/LM_How_To_Watch_Movie'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6874474924 1579154183 6857565336').split()]
@@ -64,8 +64,8 @@ MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+ekGXHvghD_FmYzdl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+BUkD64lAbMNlOGFl')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/LM_Verify')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+BUkD64lAbMNlOGFl https://t.me/+_uOww2obzMM0Nzk1')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/LM_How_To_Watch_Movie')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Instagram/Discord:- @Sahil_Jangrax')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002119845734'))
