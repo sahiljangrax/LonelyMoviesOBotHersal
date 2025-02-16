@@ -13,19 +13,19 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28023575'))
-API_HASH = environ.get('API_HASH', 'dedc36b693321633028848ba66aefa58')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6711647754:AAEX-aKD8EJujiWixgZbeXAJdchDhMYMqLg")
+API_ID = int(environ.get('API_ID', '22069132'))
+API_HASH = environ.get('API_HASH', 'c41478a79cddbd9eb7c719e42653c8b0')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7778471371:AAFTwSnbe7Dn7nHm3HSy5pTJZqraRkC0FOQ")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/a920cc9aa127c0e236836.jpg https://graph.org/file/3d12698236335933791ed.jpg https://graph.org/file/1bf94afdbe95890543760.jpg https://graph.org/file/ececfc25a16d85f3f01d3.jpg https://graph.org/file/3e08e725628b052285fa3.jpg https://graph.org/file/6e28a348d38096126270c.jpg  https://graph.org/file/fd6cc44620ca91248ada0.jpg https://graph.org/file/b4f6684792ddc991ea616.jpg https://graph.org/file/c9058dd1403b63fcbde6d.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://i.ibb.co/RYV0mdR/doc-2024-10-05-17-05-49.png')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/47c8bd9bcde438443188d.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/86b7b7e2aa7e38f328902.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/c4bbdce0121416f95947c.jpg'))
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.ibb.co/4PXCDfx/doc-2024-10-05-16-57-06.png'))
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
@@ -34,12 +34,12 @@ STREAM_API = (environ.get('STREAM_API', ''))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/LM_How_To_Watch_Movie'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6874474924 1579154183 6857565336').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002025230077 -1002201780176').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1579154183').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002377866578 -1002474788204 -1002015186954 -1002201780176 -1002332950268').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1579154183 6874474924').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002031790465')
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+auth_channel = environ.get('AUTH_CHANNEL', '-1002438357089')
 auth_grp = environ.get('AUTH_GROUP', '-1002206083184')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -47,10 +47,10 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://zoyabot:zoyapassword@cluster0.8hylmtw.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://LonelyMoviesOBot:LonelyMoviesOBot@cluster0.vukhf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -60,7 +60,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantlinks.co')
 SHORTLINK_API = environ.get('SHORTLINK_API', '8e9ec9cb956ef570d7e54b6075f89922612a30b1')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
-MAX_B_TN = environ.get("MAX_B_TN", "5")
+MAX_B_TN = environ.get("MAX_B_TN", "12")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+ekGXHvghD_FmYzdl')
@@ -68,7 +68,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+BUkD64lAbMNlOGFl https://t.me/
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/LM_How_To_Watch_Movie')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Instagram/Discord:- @Sahil_Jangrax')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002119845734'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002175721220'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -87,11 +87,11 @@ MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
-LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
+LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
 
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
-QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160P", ""]
+QUALITIES = ["HdRip","web-dl" ,"bluray", "hdr", "fhd" , "240p", "360p", "480p", "540p", "720p", "960p", "1080p", "1440p", "2K", "2160p", "4k", "5K", "8K"]
 
 # Online Stream and Download
 NO_PORT = bool(environ.get('NO_PORT', False))
@@ -103,8 +103,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://bloody-sharai-sahiljangrabot-6311c9a1.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://bloody-sharai-sahiljangrabot-6311c9a1.koyeb.app/".format(FQDN, PORT)
+URL = "https://holy-elsey-filestoreone-02c0858f.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://holy-elsey-filestoreone-02c0858f.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -119,9 +119,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "https://bloody-sharai-sahiljangrabot-6311c9a1.koyeb.app/".format(FQDN)
+    URL = "https://holy-elsey-filestoreone-02c0858f.koyeb.app/".format(FQDN)
 else:
-    URL = "https://bloody-sharai-sahiljangrabot-6311c9a1.koyeb.app/".format(FQDN)
+    URL = "https://holy-elsey-filestoreone-02c0858f.koyeb.app/".format(FQDN)
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002175721220'))
